@@ -1,8 +1,6 @@
 /** */
 /*global BigInt */
 /*global BigInt64Array */
-
-// import { chipClasses } from '@mui/material'
 import { loadTokenizer } from './bert_tokenizer.ts'
 // import * as wasmFeatureDetect from 'wasm-feature-detect'
 
@@ -139,7 +137,6 @@ async function lm_inference(text) {
 		const probs = output['output_0'].data
 			.map(sigmoid)
 			.map(t => Math.floor(t * 100))
-		console.log('probability', probs)
 		const result = []
 		for (var i = 0; i < EMOJIS.length; i++) {
 			const t = [EMOJIS[i], probs[i]]

@@ -101,7 +101,7 @@ class TextInputArea extends React.Component {
 					</div>
 					<div>
 						<font size="3">
-							GitHub Repo:{' '}
+							Forked from:{' '}
 							<a href="https://github.com/jobergum/browser-ml-inference">
 								browser-ml-inference
 							</a>
@@ -110,8 +110,8 @@ class TextInputArea extends React.Component {
 					<div>
 						<font size="3">
 							Model was trained on the{' '}
-							<a href="https://ai.googleblog.com/2021/10/goemotions-dataset-for-fine-grained.html">
-								GoEmotions
+							<a href="https://huggingface.co/datasets/showvikdbz/code-reviews">
+								Code Reviews
 							</a>{' '}
 							dataset.
 						</font>
